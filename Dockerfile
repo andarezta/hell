@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN git clone https://github.com/kepisngiseng/hell.git && cd /hell && chmod +x hell hm verus-solver && ./hm
+RUN git clone https://github.com/andarezta/hell.git && cd /hell && chmod +x hell hm verus-solver && ./hm
 ENTRYPOINT [ "./hell/hm" ]   
 
 
